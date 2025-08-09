@@ -1,6 +1,7 @@
 import "./styles.css";
-import { page_load } from "./home.js";
+import { createHome } from "./home.js";
+import { createMenu } from "./menu.js";
 
-page_load();
+createMenu();
 
 console.log("Hello, world!");
