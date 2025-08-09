@@ -1,3 +1,4 @@
+// images are left for styling phase
 export function createMenu() {
     // main container
     const content = document.querySelector("#content");
