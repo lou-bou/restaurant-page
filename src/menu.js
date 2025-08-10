@@ -1,4 +1,13 @@
-// images are left for styling phase
+import pepper_soup from "./images/menu/pepper-soup.png";
+import calamari from "./images/menu/calamari.png";
+import artichokes from "./images/menu/artichokes.png";
+import salmon from "./images/menu/salmon.png";
+import short_ribs from "./images/menu/short-ribs.png";
+import risotto from "./images/menu/risotto.png";
+import mousse from "./images/menu/mousse.png";
+import creme_brulee from "./images/menu/creme-brulee.png";
+import lemon_tart from "./images/menu/lemon-tart.png";
+
 export function createMenu() {
     // main container
     const content = document.querySelector("#content");
@@ -33,8 +42,10 @@ export function createMenu() {
     const starterMealOneDesc = document.createElement("p");
     starterMealOneDesc.textContent = "Smooth roasted pepper blend with a hint of basil, served warm and fragrant";
     const starterMealOnePrice = document.createElement("p");
+    starterMealOnePrice.setAttribute("class", "price");
     starterMealOnePrice.textContent = "$6";
     const starterMealOneImage = document.createElement("img");
+    starterMealOneImage.src = pepper_soup;
 
     starterMealOne.appendChild(starterMealOneTitle);
     starterMealOne.appendChild(starterMealOneDesc);
@@ -47,8 +58,10 @@ export function createMenu() {
     const starterMealTwoDesc = document.createElement("p");
     starterMealTwoDesc.textContent = "Crisp-fried golden rings served with tangy lemon aioli for a bright finish";
     const starterMealTwoPrice = document.createElement("p");
+    starterMealTwoPrice.setAttribute("class", "price");
     starterMealTwoPrice.textContent = "$8";
     const starterMealTwoImage = document.createElement("img");
+    starterMealTwoImage.src = calamari;
 
     starterMealTwo.appendChild(starterMealTwoTitle);
     starterMealTwo.appendChild(starterMealTwoDesc);
@@ -59,10 +72,12 @@ export function createMenu() {
     const starterMealThreeTitle = document.createElement("h2");
     starterMealThreeTitle.textContent = "Artichokes";
     const starterMealThreeDesc = document.createElement("p");
-    starterMealThreeDesc.textContent = "Grilled tender halves brushed with garlic butter and sea salt";
+    starterMealThreeDesc.textContent = "Grilled tender halves, brushed with garlic butter and finished with a touch of sea salt";
     const starterMealThreePrice = document.createElement("p");
+    starterMealThreePrice.setAttribute("class", "price");
     starterMealThreePrice.textContent = "$7";
     const starterMealThreeImage = document.createElement("img");
+    starterMealThreeImage.src = artichokes;
 
     starterMealThree.appendChild(starterMealThreeTitle);
     starterMealThree.appendChild(starterMealThreeDesc);
@@ -95,8 +110,10 @@ export function createMenu() {
     const mainMealOneDesc = document.createElement("p");
     mainMealOneDesc.textContent = "Pan-seared fillet topped with dill cream sauce and seasonal vegetables";
     const mainMealOnePrice = document.createElement("p");
+    mainMealOnePrice.setAttribute("class", "price");
     mainMealOnePrice.textContent = "$14";
     const mainMealOneImage = document.createElement("img");
+    mainMealOneImage.src = salmon;
 
     mainMealOne.appendChild(mainMealOneTitle);
     mainMealOne.appendChild(mainMealOneDesc);
@@ -109,8 +126,10 @@ export function createMenu() {
     const mainMealTwoDesc = document.createElement("p");
     mainMealTwoDesc.textContent = "Slow-braised beef served over creamy mashed potatoes with rich gravy";
     const mainMealTwoPrice = document.createElement("p");
+    mainMealTwoPrice.setAttribute("class", "price");
     mainMealTwoPrice.textContent = "$16";
     const mainMealTwoImage = document.createElement("img");
+    mainMealTwoImage.src = short_ribs;
 
     mainMealTwo.appendChild(mainMealTwoTitle);
     mainMealTwo.appendChild(mainMealTwoDesc);
@@ -123,8 +142,10 @@ export function createMenu() {
     const mainMealThreeDesc = document.createElement("p");
     mainMealThreeDesc.textContent = "Creamy arborio rice cooked with wild mushrooms and parmesan";
     const mainMealThreePrice = document.createElement("p");
+    mainMealThreePrice.setAttribute("class", "price");
     mainMealThreePrice.textContent = "$13";
     const mainMealThreeImage = document.createElement("img");
+    mainMealThreeImage.src = risotto;
 
     mainMealThree.appendChild(mainMealThreeTitle);
     mainMealThree.appendChild(mainMealThreeDesc);
@@ -157,8 +178,10 @@ export function createMenu() {
     const dessertMealOneDesc = document.createElement("p");
     dessertMealOneDesc.textContent = "Silky dark chocolate cream with a touch of espresso for depth";
     const dessertMealOnePrice = document.createElement("p");
+    dessertMealOnePrice.setAttribute("class", "price");
     dessertMealOnePrice.textContent = "$5";
     const dessertMealOneImage = document.createElement("img");
+    dessertMealOneImage.src = mousse;
 
     dessertMealOne.appendChild(dessertMealOneTitle);
     dessertMealOne.appendChild(dessertMealOneDesc);
@@ -171,8 +194,10 @@ export function createMenu() {
     const dessertMealTwoDesc = document.createElement("p");
     dessertMealTwoDesc.textContent = "Smooth vanilla custard topped with a crisp caramelized sugar crust";
     const dessertMealTwoPrice = document.createElement("p");
+    dessertMealTwoPrice.setAttribute("class", "price");
     dessertMealTwoPrice.textContent = "$6";
     const dessertMealTwoImage = document.createElement("img");
+    dessertMealTwoImage.src = creme_brulee;
 
     dessertMealTwo.appendChild(dessertMealTwoTitle);
     dessertMealTwo.appendChild(dessertMealTwoDesc);
@@ -185,8 +210,10 @@ export function createMenu() {
     const dessertMealThreeDesc = document.createElement("p");
     dessertMealThreeDesc.textContent = "Buttery crust filled with tangy lemon curd, garnished with fresh berries";
     const dessertMealThreePrice = document.createElement("p");
+    dessertMealThreePrice.setAttribute("class", "price");
     dessertMealThreePrice.textContent = "$5";
     const dessertMealThreeImage = document.createElement("img");
+    dessertMealThreeImage.src = lemon_tart;
 
     dessertMealThree.appendChild(dessertMealThreeTitle);
     dessertMealThree.appendChild(dessertMealThreeDesc);

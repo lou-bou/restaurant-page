@@ -1,0 +1,52 @@
+#menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu h1 {
+    background-color: #BCA88D;
+    text-align: center;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+#menu > div {
+    background-color: #BCA88D;
+}
+
+#menu > div > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #BCA88D;
+}
+
+#menu > div > div > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #7D8D86;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+#menu h2 {
+    font-size: 2rem;
+    padding-left: 40px;
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#menu p {
+    padding-left: 25px;
+    font-size: 1.2rem;
+    max-width: 80%;
+    text-wrap: wrap;
+}
+
+#menu .price {
+    font-weight: bold;
+}
+
+#menu img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    align-self: flex-end;
+}
