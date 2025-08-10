@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3E3F29;
+    gap: 2px;
+    padding-top: 10px;
+}
+
+nav button {
+    height: 50px;
+    width: 100px;
+    background-color: #7D8D86;
+    border: none;
+}
+
+nav button:focus {
+    background-color: #F1F0E4;
+}
+
+nav button:hover {
+    cursor: pointer;
+}
