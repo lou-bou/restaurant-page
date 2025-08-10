@@ -1,0 +1,27 @@
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 93.3dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+#about div {
+    width: 60dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #F1F0E4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#about div h1 {
+    font-size: 2.5rem;
+}
+
+#about div p {
+    font-size: 1.5rem;
+}
